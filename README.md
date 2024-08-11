@@ -1,22 +1,34 @@
- This study investigates the transformational impact of using edge computing in
- the cloud, specifically focusing on improving the performance of latency-sensitive
- applications via Amazon Web Services (AWS), with a primary emphasis on AWS
- wavelength. The study addresses the growing challenges of managing edge resources,
- ensuring data consistency and security, and seamlessly integrating with cloud services.
- Our proposed approach includes a comprehensive framework for deploying and man
-aging AWS resources such as Amazon Elastic Compute Cloud, Amazon Elastic Block
- Store volumes, and Virtual Private Cloud (VPC) subnets within wavelength zones,
- which are distinctive zones within carrier locations where wavelength infrastructure is
- deployed. A middleware layer orchestrates and synchronizes data processing and com
-munication between the edge and the cloud, utilizing AWS services such as Lambda,
- AmazonElastic File System (EFS), and Aurora DB within the associated AWS region.
- To assess the efficacy of our approach, we present a benchmark tool that measures
- latency, throughput, and cost across various wavelength zones worldwide. Extensive
- testing compares our approach to cloud-only and edge-only strategies, demonstrat
-ing significant reductions in latency, increased throughput, and cost efficiency while
- maintaining data security and consistency. In Bangladesh, specific recommendations
- are presented to improve edge applications’ latency and user experience. Selecting the
- nearest AWS region and wavelength zone, optimizing network settings, and fostering
- collaboration with local Internet service providers (ISPs) and game developers are all
- suggestions. This collaborative effort aims to integrate AWS Wavelength, providing
- faster and more reliable connectivity and content delivery to end users.
+Edge Computing in the Cloud: Improving Latency-Sensitive Applications with AWS
+Introduction
+This repository contains research on leveraging edge computing within Amazon Web Services (AWS) to enhance the performance of latency-sensitive applications. The study focuses on AWS Wavelength and its impact on cloud infrastructure.
+
+Research Overview
+The research investigates:
+
+Comprehensive Framework: Deployment and management of AWS resources (Amazon EC2, Amazon EBS, and VPC) within Wavelength Zones.
+Middleware Layer: Orchestration and synchronization of data processing and communication using AWS Lambda, Amazon EFS, and Aurora DB.
+Benchmarking and Results
+To evaluate our approach, a benchmark tool was developed to measure:
+
+Latency
+Throughput
+Cost
+Key Findings
+Significant Reductions in Latency
+Increased Throughput
+Enhanced Cost Efficiency
+Maintained Data Security and Consistency
+Recommendations for Bangladesh
+To optimize edge application performance in Bangladesh, we suggest:
+
+Selection of AWS Regions and Wavelength Zones: Choose the nearest options to reduce latency.
+Optimization of Network Settings: Tailor configurations for improved performance.
+Collaboration with Local ISPs and Developers: Work with local providers to integrate AWS Wavelength for better connectivity and content delivery.
+Conclusion
+Implementing the strategies outlined can significantly enhance cloud service performance, particularly in regions with unique connectivity challenges like Bangladesh.
+
+Repository Contents
+/src: Source code for the benchmark tool.
+/docs: Detailed documentation, research findings, and supplementary materials.
+/data: Sample datasets used for testing and benchmarking.
+/results: Results of the benchmark tests, including latency, throughput, and cost analysis.
